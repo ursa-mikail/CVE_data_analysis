@@ -1,0 +1,12 @@
+%%writefile ./sample_data/data.txt
+Value[delimiter]Weight[delimiter]Description[delimiter]
+Automated[delimiter] 1.0[delimiter] No human interaction is required.[delimiter]
+Typical/Limited[delimiter] 0.9[delimiter] The attacker must hijack the user to perform an action that is common or regarded as "normal" within typical product operation. For example, clicking on a link in a web page, or previewing the body of an email, is common behavior.[delimiter]
+Moderate[delimiter] 0.8[delimiter] The attacker must hijack the user to perform an action that might appear suspicious to a cautious, knowledgeable user. For example: the user has to accept a warning that suggests the attacker's payload might contain dangerous content.[delimiter]
+Opportunistic[delimiter] 0.3[delimiter] The attacker cannot directly control or influence the victim, and can only passively capitalize on mistakes or actions of others.[delimiter]
+High[delimiter] 0.1[delimiter] A large amount of social engineering is required, possibly including ignorance or negligence on the part of the victim.[delimiter]
+No interaction[delimiter] 0.0[delimiter] There is no interaction possible, not even opportunistically; this typically would render the weakness as a "bug" instead of leading to a vulnerability. Since CWSS is for security, the weight is 0.[delimiter]
+Default[delimiter] 0.55[delimiter] Median of values for Automated, Limited, Moderate, Opportunistic, High, and No interaction.[delimiter]
+Unknown[delimiter] 0.5[delimiter] There is not enough information to provide a value for this factor. Further analysis may be necessary. In the future, a different value might be chosen, which could affect the score.[delimiter]
+Not Applicable[delimiter] 1.0[delimiter] This factor is being intentionally ignored in the score calculation because it is not relevant to how the scorer prioritizes weaknesses. This might not be applicable in an environment with high assurance requirements, or an environment that has high concerns about insider attacks between people with an established trust relationship.[delimiter]
+Quantified[delimiter] [delimiter] This factor could be quantified with custom weights.[delimiter]

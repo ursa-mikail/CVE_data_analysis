@@ -1,0 +1,11 @@
+%%writefile ./sample_data/data.txt
+Value [delimiter] Weight [delimiter] Description [delimiter]
+Critical[delimiter] 1.0[delimiter] Complete control over the software being analyzed, to the point where operations cannot take place.[delimiter]
+High[delimiter] 0.9[delimiter] Significant control over the software being analyzed, or access to critical information can be obtained.[delimiter]
+Medium[delimiter] 0.6[delimiter] Moderate control over the software being analyzed, or access to moderately important information can be obtained.[delimiter]
+Low[delimiter] 0.3[delimiter] Minimal control over the software being analyzed, or only access to relatively unimportant information can be obtained.[delimiter]
+None[delimiter] 0.0[delimiter] There is no technical impact to the software being analyzed at all. In other words, this does not lead to a vulnerability.[delimiter]
+Default[delimiter] 0.6[delimiter] The Default weight is the median of the weights for Critical, High, Medium, Low, and None.[delimiter]
+Unknown[delimiter] 0.5[delimiter] There is not enough information to provide a value for this factor. Further analysis may be necessary. In the future, a different value might be chosen, which could affect the score.[delimiter]
+Not Applicable[delimiter] 1.0[delimiter] This factor is being intentionally ignored in the score calculation because it is not relevant to how the scorer prioritizes weaknesses. This factor might not be applicable in an environment with high assurance requirements; the user might want to investigate every weakness finding of interest, regardless of confidence.[delimiter]
+Quantified[delimiter] [delimiter] This factor could be quantified with custom weights.[delimiter]

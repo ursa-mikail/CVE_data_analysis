@@ -1,0 +1,10 @@
+%%writefile ./sample_data/data.txt
+Value[delimiter]Weight[delimiter]Description[delimiter]
+Application[delimiter] 1.0[delimiter] The attacker acquires privileges that are supported within the software under analysis itself. (If the software under analysis is an essential part of the underlying system, such as an OS kernel, then the System value may be more appropriate.)[delimiter]
+System[delimiter] 0.9[delimiter] The attacker acquires privileges to the underlying system or physical host that is being used to run the software under analysis.[delimiter]
+Network[delimiter] 0.7[delimiter] The attacker acquires privileges to access the network.[delimiter]
+Enterprise Infrastructure[delimiter] 1.0[delimiter] The attacker acquires privileges to a critical piece of enterprise infrastructure, such as a router, switch, DNS, domain controller, firewall, identity server, etc.[delimiter]
+Default[delimiter] 0.9[delimiter] Median of the weights for Application, System, Network, and Enterprise Infrastructure.[delimiter]
+Unknown[delimiter] 0.5[delimiter] There is not enough information to provide a value for this factor. Further analysis may be necessary. In the future, a different value might be chosen, which could affect the score.[delimiter]
+Not Applicable[delimiter] 1.0[delimiter] This factor is being intentionally ignored in the score calculation because it is not relevant to how the scorer prioritizes weaknesses. This factor might not be applicable in an environment with high assurance requirements that wants strict enforcement of privilege separation, even between already-privileged users.[delimiter]
+Quantified[delimiter] [delimiter] This factor could be quantified with custom weights. Note that Quantified values are supported for completeness; however, since privilege layers are discrete entities, there might be limited circumstances in which a quantified model would be useful.[delimiter]

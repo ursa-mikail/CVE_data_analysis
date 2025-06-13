@@ -49,3 +49,27 @@ The following charts are generated:
     - Attack Vector Distribution
     - Number of CVEs per Year
 
+```
+%%writefile ./sample_data/data.txt
+Value[delimiter]Weight[delimiter]Description[delimiter]
+...
+:
+
+```
+
+```
+!curl -O https://raw.githubusercontent.com/ursa-mikail/data_format/main/tabulated_data_markup_language_tdml_file_into_a_csv/method_01/tdml_file_into_csv.py
+
+!git clone https://github.com/ursa-mikail/data_format.git
+!cd data_format/tabulated_data_markup_language_tdml_file_into_a_csv/method_01
+!python tdml_file_into_csv.py
+```
+![CVE_00](CVE_00.png)
+![CVE_01](CVE_01.png)
+![CVE_02](CVE_02.png)
+![CVE_03](CVE_03.png)
+
+Access Vector 
+
+![CVE_04](CVE_04.png)
+![CVE_05](CVE_05.png)

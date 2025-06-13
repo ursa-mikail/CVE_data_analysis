@@ -1,0 +1,12 @@
+%%writefile ./sample_data/data.txt
+Value[delimiter]Weight[delimiter]Description[delimiter]
+Internet[delimiter] 1.0[delimiter] An attacker must have access to the Internet to reach the weakness.[delimiter]
+Intranet[delimiter] 0.8[delimiter] An attacker must have access to an enterprise intranet that is shielded from direct access from the Internet, e.g. by using a firewall, but otherwise the intranet is accessible to most members of the enterprise.[delimiter]
+Private Network[delimiter] 0.8[delimiter] An attacker must have access to a private network that is only accessible to a narrowly-defined set of trusted parties.[delimiter]
+Adjacent Network[delimiter] 0.7[delimiter] An attacker must have access to a physical interface to the network, such as the broadcast or collision domain of the vulnerable software. Examples of local networks include local IP subnet, Bluetooth, IEEE 802.11, and local Ethernet segment.[delimiter]
+Local[delimiter] 0.5[delimiter] The attacker must have an interactive, local (shell) account that interfaces directly with the underlying operating system.[delimiter]
+Physical[delimiter] 0.2[delimiter] The attacker must have physical access to the system that the software runs on, or otherwise able to interact with the system via interfaces such as USB, CD, keyboard, mouse, etc.[delimiter]
+Default[delimiter] 0.75[delimiter] Median of weights for relevant values.[delimiter]
+Unknown[delimiter]0.5[delimiter] [delimiter]
+Not Applicable[delimiter] 1.0[delimiter] This factor is being intentionally ignored in the score calculation because it is not relevant to how the scorer prioritizes weaknesses.[delimiter]
+Quantified[delimiter] [delimiter] This factor could be quantified with custom weights. Note that Quantified values are supported for completeness; however, since access vectors are discrete entities, there might be limited circumstances in which a quantified model would be useful.[delimiter]
